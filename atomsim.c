@@ -4,10 +4,12 @@ int apply_gravity(float y, float g)
     // velocity
     float v = 0;
 
-    // number of seconds counter until obj reaches the ground(100y)
+    // number of seconds counter until the object reaches the ground(0y)
     int s = 0;
 
-    while(y > 100)
+    printf("Started 0s, %.2f y\n", y);
+
+    while(y > 0)
     {
         v = v + g;
         y = y - v;
@@ -21,14 +23,11 @@ int apply_gravity(float y, float g)
 // main program
 int main()
 {
-    // empty box, no external forces by default
-    // object interacts with gravity
-    // object is in a box,
-    // box parameters: 100m -- 200m x axis, 100m -- 200m y axis, customize to your needs
-    // g = 9.81 m/s^2, approximation of Earth's gravity, customize to your needs
-    // gravitational constant ^^^
-    // applying gravity
-    apply_gravity(200, 9.81);
+    // change values here to apply different surface gravities and y levels for an object to fall through
+    // y level stops at 0 by default, is measured in meters
+    // surface gravity is measured in m/s^2
+    apply_gravity(/* change the y level in this arg */200, /*change the surface gravity in this arg*/8.1);
 
     return 0;
+
 }
