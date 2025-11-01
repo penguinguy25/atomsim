@@ -1,5 +1,4 @@
-#include <iostream>
-#include <print>
+#include <cstdio>
 class Object
 {
 public:
@@ -50,4 +49,5 @@ int main()
 
     return 0;
 }
+
 
