@@ -7,3 +7,6 @@ you can modify the y values in the while loop as to give more space for objects 
 
 ### have fun!
 if you have any improvements/suggestions (which is expected because im a trash coder), feel free to send a PR!
+
+## Update:
+this repo + releases is a complete mess and i am too lazy to fix this rn so uhhhh!!!
